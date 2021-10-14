@@ -1,0 +1,10 @@
+C:\projects\Pokedex\Pokedex.WebAPI\Pokedex.Core\bin\Debug\netcoreapp3.1\Pokedex.Core.deps.json
+C:\projects\Pokedex\Pokedex.WebAPI\Pokedex.Core\bin\Debug\netcoreapp3.1\Pokedex.Core.dll
+C:\projects\Pokedex\Pokedex.WebAPI\Pokedex.Core\bin\Debug\netcoreapp3.1\Pokedex.Core.pdb
+C:\projects\Pokedex\Pokedex.WebAPI\Pokedex.Core\obj\Debug\netcoreapp3.1\Pokedex.Core.csproj.AssemblyReference.cache
+C:\projects\Pokedex\Pokedex.WebAPI\Pokedex.Core\obj\Debug\netcoreapp3.1\Pokedex.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\Pokedex\Pokedex.WebAPI\Pokedex.Core\obj\Debug\netcoreapp3.1\Pokedex.Core.AssemblyInfoInputs.cache
+C:\projects\Pokedex\Pokedex.WebAPI\Pokedex.Core\obj\Debug\netcoreapp3.1\Pokedex.Core.AssemblyInfo.cs
+C:\projects\Pokedex\Pokedex.WebAPI\Pokedex.Core\obj\Debug\netcoreapp3.1\Pokedex.Core.csproj.CoreCompileInputs.cache
+C:\projects\Pokedex\Pokedex.WebAPI\Pokedex.Core\obj\Debug\netcoreapp3.1\Pokedex.Core.dll
+C:\projects\Pokedex\Pokedex.WebAPI\Pokedex.Core\obj\Debug\netcoreapp3.1\Pokedex.Core.pdb
