@@ -7,6 +7,8 @@ using Pokedex.WebAPI.Models;
 
 namespace Pokedex.WebAPI.Controllers
 {
+    [ApiController]
+    [Route("pokemon")]
     public class PokemonController : ControllerBase
     {
         private readonly IPokemonService _pokemonService;
