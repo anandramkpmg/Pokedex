@@ -9,6 +9,7 @@ using Microsoft.OpenApi.Models;
 using Pokedex.Core;
 using Pokedex.Core.API.PokemonApi;
 using Pokedex.Core.API.TranslationApi;
+using Pokedex.WebAPI.ErrorHandlers;
 using Pokedex.WebAPI.Mappers;
 using Refit;
 
@@ -69,6 +70,8 @@ namespace Pokedex.WebAPI
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseMiddleware<ErrorHandlerMiddleware>();
 
             app.UseEndpoints(endpoints =>
             {
