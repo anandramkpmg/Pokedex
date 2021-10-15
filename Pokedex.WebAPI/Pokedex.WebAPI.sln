@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokedex.WebAPI", "Pokedex.WebAPI\Pokedex.WebAPI.csproj", "{6D53AD2C-31C5-4FD2-A29E-5EFEEDB1301E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokedex.Core", "Pokedex.Core\Pokedex.Core.csproj", "{08378522-AC4E-43BA-9DEF-85DA2DCE79DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokedex.Core", "Pokedex.Core\Pokedex.Core.csproj", "{08378522-AC4E-43BA-9DEF-85DA2DCE79DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokedex.Core.Tests", "Pokedex.Core.Tests\Pokedex.Core.Tests.csproj", "{7D468645-301B-4CC6-B8B2-1DE4129FFFF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{08378522-AC4E-43BA-9DEF-85DA2DCE79DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08378522-AC4E-43BA-9DEF-85DA2DCE79DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08378522-AC4E-43BA-9DEF-85DA2DCE79DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D468645-301B-4CC6-B8B2-1DE4129FFFF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D468645-301B-4CC6-B8B2-1DE4129FFFF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D468645-301B-4CC6-B8B2-1DE4129FFFF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D468645-301B-4CC6-B8B2-1DE4129FFFF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

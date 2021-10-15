@@ -1,15 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.OpenApi.Models;
 using Pokedex.Core;
@@ -23,6 +17,9 @@ namespace Pokedex.WebAPI
 {
     public class Startup
     {
+        private string PokeApiBaseAddress = "https://pokeapi.co/api/v2";
+        private string TranslationApiBaseAddress = "https://api.funtranslations.com";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -50,11 +47,11 @@ namespace Pokedex.WebAPI
 
             services
                 .AddRefitClient<IPokemonApi>()
-                .ConfigureHttpClient(c => c.BaseAddress = new Uri("https://pokeapi.co/api/v2"));
+                .ConfigureHttpClient(c => c.BaseAddress = new Uri(PokeApiBaseAddress));
 
             services
                 .AddRefitClient<ITranslationApi>()
-                .ConfigureHttpClient(c => c.BaseAddress = new Uri("https://api.funtranslations.com"));
+                .ConfigureHttpClient(c => c.BaseAddress = new Uri(TranslationApiBaseAddress));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

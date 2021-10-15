@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Pokedex.Core.Services;
 using Pokedex.WebAPI.Models;
@@ -17,9 +18,11 @@ namespace Pokedex.WebAPI.Controllers
         }
 
         [HttpGet("{name}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PokemonModel))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Get(string name)
         {
-            var pokemon = await _pokemonService.GetPokemonAsync(name);
+            var pokemon = await _pokemonService.GetPokemon(name);
 
             if (pokemon == null)
             {
@@ -30,11 +33,11 @@ namespace Pokedex.WebAPI.Controllers
         }
 
         [HttpGet("translated/{name}")]
-        //[ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PokemonModel))]
-        //[ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(PokemonModel))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> GetTranslatedPokemon(string name)
         {
-            var entity = await _pokemonService.GetTranslatedPokemonAsync(name);
+            var entity = await _pokemonService.GetTranslatedPokemon(name);
 
             if (entity == null)
             {

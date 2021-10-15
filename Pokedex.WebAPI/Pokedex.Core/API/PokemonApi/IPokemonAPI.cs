@@ -7,6 +7,6 @@ namespace Pokedex.Core.API.PokemonApi
     public interface IPokemonApi
     {
         [Get("/pokemon-species/{name}")]
-        public Task<IApiResponse<Pokemon>> GetSpeciesAsync(string name);
+        public Task<IApiResponse<Pokemon>> GetSpecies(string name);
     }
 }

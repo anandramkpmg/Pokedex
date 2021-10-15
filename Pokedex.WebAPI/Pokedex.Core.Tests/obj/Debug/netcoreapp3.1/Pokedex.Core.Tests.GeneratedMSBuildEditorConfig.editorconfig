@@ -1,0 +1,4 @@
+is_global = true
+build_property.RefitInternalNamespace = Pokedex.Core.Tests
+build_property.RootNamespace = Pokedex.Core.Tests
+build_property.ProjectDir = C:\projects\Pokedex\Pokedex.WebAPI\Pokedex.Core.Tests\
